@@ -2,9 +2,7 @@
 This project aims to analyze the sample database of a digital media store using SQL.
 
 ## Schema of the database
-<p align="center">
 <img width="836" alt="Music_Store_Schema" src="https://github.com/user-attachments/assets/7e123289-24e7-4932-890f-e25f2058200f">
-</p>
 
 ## Database and Tools Used
 - PostgreSQL
