@@ -7,3 +7,12 @@ This project aims to analyze the sample database of a digital media store using 
 ## Database and Tools Used
 - PostgreSQL
 - PgAdmin4
+
+### Here's the list of Questions I solved
+##### Set I Questions
+1. Who is the senior most employee based on job title?
+2. Which countries have the most invoices?
+3. What are the top 3 values of total invoices?
+4. Which city has the best customers? (We would like to throw a promotional Music Festival in the city where we made the most money.)
+5. Who is the best customer? (The customer who has spent the most money will be declared the best customer.)
+
