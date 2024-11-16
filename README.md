@@ -26,7 +26,12 @@ This project aims to analyze the sample database of a digital media store using 
 2. We want to find out the most popular music genre for each country. We determine the most popular genre as the genre with the highest amount of purchases. Write a query that returns each country along with the top genre.
 3. Write a query that determines the customer that has spent the most on music for each country. Write a query that returns the country along with the top customer and how much they spent. For countries where the top amount spent is shared, provide all customers who spent this amount.
 
-
+### Concepts I Used
+* SQL Basics (SELECT, WHERE, and filtering)
+* JOINS (INNER JOIN, LEFT JOIN)
+* WINDOW Functions
+* CTE
+* GROUP BY, ORDER BY, and Aggregations
 
 
 
