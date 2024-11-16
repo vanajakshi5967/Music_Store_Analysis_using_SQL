@@ -47,7 +47,7 @@ SELECT
 	customer.last_name,
 	ROUND(CAST(SUM(total) AS NUMERIC), 2) AS total
 FROM invoice
-LEFT JOIN customer -- you can use "INNER JOIN" as well
+LEFT JOIN customer 
 	ON invoice.customer_id = customer.customer_id
 GROUP BY 1, 2, 3
 ORDER BY total DESC
