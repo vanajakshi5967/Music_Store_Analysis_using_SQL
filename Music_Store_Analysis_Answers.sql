@@ -1,4 +1,4 @@
-/* Easy Questions */
+/* SET-I Questions */
 
 -- Q1: Who is the senior most employee based on job title?
 
@@ -6,8 +6,7 @@ SELECT *
 FROM employee
 ORDER BY levels DESC
 LIMIT 1;
-
--- "Madan Mohan is the senior most employee."
+-- "Madan Mohan is the senior employee."
 
 -- Q2: Which countries have the most invoices?
 SELECT billing_country,
@@ -15,21 +14,19 @@ SELECT billing_country,
 FROM invoice
 GROUP BY billing_country
 ORDER BY total_invoices DESC;
-
--- "The USA has the most invoices of 131, followed by other countries like Canada, Brazil and so on."
+-- "The USA has the most invoices of 131, followed by other countries like Canada, Brazil, and so on."
 
 -- Q3: What are the top 3 values of total Invoice?
 SELECT ROUND(CAST(total AS NUMERIC), 2)
 FROM invoice
 ORDER BY total DESC
 LIMIT 3;
-
 -- "The top 3 values of Total Invoices are 23.76, 19.8, & 19.8."
 
 /* Q3: Which city has the best customers? We would like to throw a promotional 
  Music Festival in the city we made the most money. Write a query that returns 
  one city that has the highest sum of invoice totals. Return both the city name 
- and sum of all invoice totals.
+ and the sum of all invoice totals.
 */
 SELECT 
 	billing_city,
@@ -38,8 +35,8 @@ FROM invoice
 GROUP BY billing_city
 ORDER BY total DESC
 LIMIT 1;
-
 -- "Prague has made the most money ($273.24). You can conduct a promotional Music Festival in Prague."
+
 
 /* Q5: Who is the best customer? The customer who has spent the most money will be declared 
 	the best customer. Write a query that returns the person who has spent the most money.
@@ -55,10 +52,9 @@ LEFT JOIN customer -- you can use "INNER JOIN" as well
 GROUP BY 1, 2, 3
 ORDER BY total DESC
 LIMIT 1;
-
 -- "R Madhav has spent the most money ($144.54)."
 
-/* Moderate Questions */
+/* SET-II Questions */
 
 /* Q1: Write a query to return the email, first name, last name, and genre of all Rock Music listeners. 
 	 Return your list ordered alphabetically by email starting with A.
@@ -78,6 +74,7 @@ WHERE
 GROUP BY 1, 2, 3, 4
 ORDER BY email;
 
+
 /* Q2: Let's invite the artists who have written the most rock music in our dataset. 
 Write a query that returns the Artist name and total track count of the top 10 rock bands. 
 */
@@ -88,7 +85,7 @@ FROM artist
 JOIN album ON artist.artist_id = album.artist_id
 JOIN track ON album.album_id = track.album_id
 WHERE 
-	track.genre_id = '1'
+	track.genre_id = '1'  -- "Rock" has the genre_id of 1
 GROUP BY artist.name
 ORDER BY total_track_count DESC
 LIMIT 10;
@@ -108,7 +105,7 @@ GROUP BY
 ORDER BY milliseconds DESC;
 
 
-/* Advance Questions */
+/* SET-III Questions */
 
 /* Q1: Find how much amount spent by each customer on artists? 
 	Write a query to return customer name, artist name, and total spent.
