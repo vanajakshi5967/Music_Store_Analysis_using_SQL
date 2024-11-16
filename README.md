@@ -6,3 +6,4 @@ This project aims to analyze the sample database of a digital media store using 
 
 ## Database and Tools
 - PostgreSQL
+- PgAdmin4
