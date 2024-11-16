@@ -8,8 +8,8 @@ This project aims to analyze the sample database of a digital media store using 
 - PostgreSQL
 - PgAdmin4
 
-### Here's the list of Questions I solved
-##### Set I Questions
+## Here's the list of Questions I solved
+#### Set I Questions
 1. Who is the senior most employee based on job title?
 2. Which countries have the most invoices?
 3. What are the top 3 values of total invoices?
@@ -26,13 +26,27 @@ This project aims to analyze the sample database of a digital media store using 
 2. We want to find out the most popular music genre for each country. We determine the most popular genre as the genre with the highest amount of purchases. Write a query that returns each country along with the top genre.
 3. Write a query that determines the customer that has spent the most on music for each country. Write a query that returns the country along with the top customer and how much they spent. For countries where the top amount spent is shared, provide all customers who spent this amount.
 
-### Concepts I Used
+## Concepts I Used
 * SQL Basics (SELECT, WHERE, and filtering)
 * JOINS (INNER JOIN, LEFT JOIN)
 * WINDOW Functions
 * CTE
 * GROUP BY, ORDER BY, and Aggregations
 
+## Key Insights
+- The majority of revenue comes from customers in the United States, followed by Canada and Brazil.
+- Prague has the best customers who made the most money ($273.24).
+- R Madhav is the best customer who has spent the most money ($144.54).
+- Rock Music has the highest number of listeners (2635) over other music.
+
+## Recommendations
+- Invest in marketing campaigns targeting Rock and Metal genres, especially during peak seasons.
+- Expand promotions in top-performing regions like the United States while exploring underperforming markets for growth opportunities.
+- Evaluate customer feedback to identify potential new genres or features to attract a broader audience.
+
+## Conclusion
+The analysis of the database provided valuable insights into customer behavior, genre popularity, and revenue trends. The rock genre dominates sales, with the United States contributing the highest revenue. 
+To capitalize on these insights, marketing efforts should prioritize top genres and regions, while exploring untapped markets for growth.
 
 
 
