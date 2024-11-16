@@ -10,7 +10,7 @@ This project aims to analyze the sample database of a digital media store using 
 
 ### Here's the list of Questions I solved
 ##### Set I Questions
-1. Who is the senior most employee based on job title?
+* Who is the senior most employee based on job title?
 2. Which countries have the most invoices?
 3. What are the top 3 values of total invoices?
 4. Which city has the best customers? (We would like to throw a promotional Music Festival in the city where we made the most money.)
