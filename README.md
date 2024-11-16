@@ -1,2 +1,2 @@
 # Music_Store_Analysis_using_SQL
-Analysis of a digital media store using SQL
+This project aims to analyze the sample database of a digital media store using SQL.
